@@ -22,7 +22,7 @@
     "autoload": {
         "psr-4": {
             "TAOCEANZ\\Core\\": "src/Core",
-            "TAOCEANZ\\ORM\\": "src/ORM",
+            "TAOCEANZ\\ORM\\": "src/ORM"
         }
     },
     "prefer-stable": true,
