@@ -1,0 +1,26 @@
+{
+    "name": "taoceanz/silverstripe-instance-shortcodes",
+    "type": "silverstripe-vendormodule",
+    "description": "This extension facilitates accessing properties on a class via a shortcode defined in the CMS, except the shortcode is rendered in instance context giving it access to the model data of the page.",
+    "homepage": "http://taocean.io/",
+    "license": "GPL-3.0",
+    "keywords": [
+        "silverstripe",
+        "shortcode",
+        "extension"
+    ],
+    "authors": [
+        {
+            "name": "Thomas Ocean",
+            "email": "do@taocean.io",
+            "role": "developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TAOCEANZ\\Core\\": "src/Core"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

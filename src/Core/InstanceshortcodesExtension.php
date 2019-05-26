@@ -1,6 +1,6 @@
 <?php
 
-namespace taoceanz\Core;
+namespace TAOCEANZ\Core;
 
 use SilverStripe\Core\Extension;
 use SilverStripe\ORM\ArrayList;
@@ -42,8 +42,9 @@ class InstanceShortcodesExtension extends Extension
      * the value for the property passed if no instance shortcodes available,
      * else filter and return the property for predefined shortcodes
      *
-     * @param String $property Property to filter
+     * @param String $property          Property to filter
      * @param String $property_property Property on property to filter
+     *
      * @return Array $filtered_property Assoc array property as key with either
      * original property value or filtered property value as value
      */
@@ -83,8 +84,9 @@ class InstanceShortcodesExtension extends Extension
     /**
      * Filter predeinfed instance shortcodes on given string property
      *
-     * @param Array $property_array ($property)
+     * @param Array    $property_array   ($property)
      * @param SiteTree $property_context Any decendent of SiteTree to be context of $property
+     *
      * @return String Filtered property else original property
      */
     protected function filterInstanceShortcodesInString(
@@ -119,9 +121,12 @@ class InstanceShortcodesExtension extends Extension
     /**
      * Filter predeinfed instance shortcodes on given property on a given object
      *
-     * @param Array $property_array (String $property, String $property_property)
-     * @param String $property
-     * @param String $property_property
+     * @param Array $property_array Array containing object and property to filter
+     * [
+     *      String $property,           // Name of list to filter
+     *      String $property_property   // Name of property to filter on list
+     * ]
+     *
      * @return Array $property_list_as_object
      */
     private function filterInstanceShortcodesInList(array $property_array)
@@ -133,8 +138,8 @@ class InstanceShortcodesExtension extends Extension
 
         // Filter property on given object
         foreach ($property_list_as_object as &$property_item) {
-            $filtered_property =
-                $this->filterInstanceShortcodesInString(
+            $filtered_property
+                = $this->filterInstanceShortcodesInString(
                     ['property' => $property_property],
                     $property_item
                 );
@@ -155,6 +160,7 @@ class InstanceShortcodesExtension extends Extension
      * Convert ArrayList to Array
      *
      * @param ArrayList $array_list ArrayList to convert
+     *
      * @return Array $list_as_array ArrayList converted to Array
      */
     private function convertListToObject($array_list)
