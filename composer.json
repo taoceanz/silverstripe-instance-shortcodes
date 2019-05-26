@@ -6,8 +6,11 @@
     "license": "GPL-3.0",
     "keywords": [
         "silverstripe",
+        "silverstripe 4",
         "shortcode",
-        "extension"
+        "extension",
+        "module",
+        "addon"
     ],
     "authors": [
         {
@@ -18,7 +21,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "TAOCEANZ\\Core\\": "src/Core"
+            "TAOCEANZ\\Core\\": "src/Core",
+            "TAOCEANZ\\ORM\\": "src/ORM",
         }
     },
     "prefer-stable": true,

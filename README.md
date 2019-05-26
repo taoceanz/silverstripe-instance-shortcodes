@@ -23,6 +23,7 @@ Displaying the form via a standard shortcode will not allow you to access `form_
 
 - Thomas Ocean
 
-## Issues
+## Issues and improvement
 
-Feel free to create a pull request, else email do@taocean.io with requests and/or issues.
+If you find an issue, please [log and issue](https://github.com/taoceanz/silverstripe-instance-shortcodes/issues)
+If you know of a way to improve this extension, please [create a pull request](https://github.com/taoceanz/silverstripe-instance-shortcodes/pulls)
