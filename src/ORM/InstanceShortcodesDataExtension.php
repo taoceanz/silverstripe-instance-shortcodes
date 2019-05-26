@@ -1,8 +1,8 @@
 <?php
 
-namespace TAOCEANZ\Core;
+namespace TAOCEANZ\ORM;
 
-use SilverStripe\Core\Extension;
+use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\ArrayList;
 
 /**
@@ -10,7 +10,7 @@ use SilverStripe\ORM\ArrayList;
  *
  * @author taoceanz <do@taocean.io>
  */
-class InstanceShortcodesExtension extends Extension
+class InstanceShortcodesDataExtension extends DataExtension
 {
     /**
      * Map instance shortcode to function in your controller

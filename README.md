@@ -13,7 +13,7 @@ Displaying the form via a standard shortcode will not allow you to access `form_
 
 ## Installation
 
-`\$ composer require taocean/silverstripe-instance-shortcodes
+`$ composer require taocean/silverstripe-instance-shortcodes`
 
 ## Requirements
 
@@ -22,3 +22,7 @@ Displaying the form via a standard shortcode will not allow you to access `form_
 ## Maintainers
 
 - Thomas Ocean
+
+## Issues
+
+Feel free to create a pull request, else email do@taocean.io with requests and/or issues.
