@@ -1,7 +1,7 @@
 {
     "name": "taoceanz/silverstripe-instance-shortcodes",
     "type": "silverstripe-vendormodule",
-    "description": "This extension facilitates accessing properties on a class via a shortcode defined in the CMS, except the shortcode is rendered in instance context giving it access to the model data of the page.",
+    "description": "Facilitate using shortcodes, but rendered in instance context (rather than static) giving it access to the model data of the page.",
     "homepage": "https://github.com/taoceanz/silverstripe-instance-shortcodes",
     "license": "BSD-3-Clause",
     "keywords": [
