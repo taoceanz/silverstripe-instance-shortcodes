@@ -110,6 +110,16 @@ trait InstanceShortcodes
 
         // Replace code with return from callback function
         foreach ($instance_shortcodes[$property] as $code => $callback) {
+            /*
+             * Skip filtering if code isn't found in property to filter
+             * Filtering a property unnecessarily can cause unwanted side effects
+             * E.G. triggering adding Requirements for each time callback() is triggered
+             */
+            if (!strpos($property_to_filter, $code)) {
+                $filtered_property = null;
+                continue;
+            }
+            // Replace $code with $callback
             $filtered_property = str_replace(
                 $code,
                 $this->owner->$callback(),
