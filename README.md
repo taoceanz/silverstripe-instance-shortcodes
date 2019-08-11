@@ -13,7 +13,7 @@ Displaying the form via a standard shortcode will not allow you to access `form_
 
 ## Installation
 
-`$ composer require taocean/silverstripe-instance-shortcodes`
+`$ composer require taoceanz/silverstripe-instance-shortcodes`
 
 ## Requirements
 
